@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleAppNYT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="real_time_feed_of_nyt_article_publishes_top_stories_api">Real-time feed of NYT article publishes</string>
+    <string name="get_all_nyt_article_metadata_for_a_given_month">Get all NYT article metadata for a given month</string>
+    <string name="get_nyt_best_sellers_lists_and_lookup_book_reviews">Get NYT Best Sellers Lists and lookup book reviews</string>
+    <string name="the_times_newswire_api_provides_an_up_to_the_minute_stream_of_published_articles">The Times Newswire API provides an up-to-the-minute stream of published articles (NYTimes.com)</string>
+</resources>

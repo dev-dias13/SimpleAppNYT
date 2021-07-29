@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/archiveFragment"
+        android:name="org.devdias.simpleappnyt.view.ArchiveFragment"
+        android:label="fragment_archive"
+        tools:layout="@layout/fragment_archive" >
+        <action
+            android:id="@+id/action_archiveFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="org.devdias.simpleappnyt.view.BooksFragment"
+        android:label="fragment_books"
+        tools:layout="@layout/fragment_books" >
+        <action
+            android:id="@+id/action_booksFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularArticlesFragment"
+        android:name="org.devdias.simpleappnyt.view.PopularArticlesFragment"
+        android:label="fragment_popular_articles"
+        tools:layout="@layout/fragment_popular_articles" >
+        <action
+            android:id="@+id/action_popularArticlesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timesWireFragment"
+        android:name="org.devdias.simpleappnyt.view.TimesWireFragment"
+        android:label="fragment_times_wire"
+        tools:layout="@layout/fragment_times_wire" >
+        <action
+            android:id="@+id/action_timesWireFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="org.devdias.simpleappnyt.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_booksFragment"
+            app:destination="@id/booksFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_archiveFragment"
+            app:destination="@id/archiveFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_timesWireFragment"
+            app:destination="@id/timesWireFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_popularArticlesFragment"
+            app:destination="@id/popularArticlesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchArticleFragment"
+            app:destination="@id/searchArticleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_movieReviewsFragment"
+            app:destination="@id/movieReviewsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_topStoriesFragment"
+            app:destination="@id/topStoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchArticleFragment"
+        android:name="org.devdias.simpleappnyt.view.SearchArticleFragment"
+        android:label="SearchArticleFragment" >
+        <action
+            android:id="@+id/action_searchArticleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieReviewsFragment"
+        android:name="org.devdias.simpleappnyt.view.MovieReviewsFragment"
+        android:label="MovieReviewsFragment" >
+        <action
+            android:id="@+id/action_movieReviewsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topStoriesFragment"
+        android:name="org.devdias.simpleappnyt.view.TopStoriesFragment"
+        android:label="fragment_top_stories"
+        tools:layout="@layout/fragment_top_stories" >
+        <action
+            android:id="@+id/action_topStoriesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
